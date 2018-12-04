@@ -1,5 +1,6 @@
 class catClicker {
-  constructor(clickCounter, catImage) {
+  constructor(name, clickCounter, catImage) {
+    this.name = name;
     this.clickCount = 0;
     this.clickCounter = document.querySelector(clickCounter);
     this.clickCounter.innerHTML = this.clickCount;
@@ -12,5 +13,5 @@ class catClicker {
   }
 }
 
-const cat1 = new catClicker('#clickCounter1', '#catImage1');
-const cat2 = new catClicker('#clickCounter2', '#catImage2');
+const cat1 = new catClicker('Bob', '#clickCounter1', '#catImage1');
+const cat2 = new catClicker('Fred', '#clickCounter2', '#catImage2');
